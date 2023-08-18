@@ -1,0 +1,23 @@
+
+.App {
+  --main-background: var(--white-800);
+  --card-background: var(--white-900);
+  --text-color: var(--gray-400);
+  --text-color-second: var(--white-500);
+
+  display: flex;
+  background-color: var(--main-background);
+}
+
+.App.isDark {
+  --main-background: var(--black-200);
+  --card-background: var(--black-500);
+  --text-color: var(--gray-900);
+  --text-color-second: var(--gray-500)
+}
+
+@media(max-width: 833px) {
+  .App {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,140 @@
+.sidebar {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 100vh;
+  margin-right: 27px;
+  max-width: 460px;
+  background-color: var(--card-background);
+  background-image: url(/src/assets/img/clouds.png);
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: contain;
+  background-blend-mode: difference;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgWrapper {
+  align-self: center;
+}
+
+/* .sideBar__button {
+  padding: 15px 27px;
+  background-color: transparent;
+  border: 2px solid var(--gray-800);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.sideBar__img {
+  display: block;
+  margin: 0 auto;
+} */
+
+.description {
+  margin-bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  display: flex;
+  align-items: baseline;
+}
+
+.tempNumber {
+  font-size: 96px;
+  font-weight: 900;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.tempDegree {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray-800);
+}
+
+.date {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray-800);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationImg {
+  margin-right: 8px;
+}
+
+.locationName {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray-800);
+}
+
+
+@media (max-width: 1439px) {
+  .sidebar {
+    max-height: initial;
+    background-position: center 30%;
+    max-width: 329px;
+    width: 100%;
+  }
+  
+  .container {
+    padding: 53px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+@media (max-width: 833px) {
+  .sidebar {
+    margin-right: 0;
+    max-width: initial;
+    background-position: center 25%;
+  }
+}

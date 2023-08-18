@@ -1,0 +1,41 @@
+.modal {
+  padding: 46px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--card-background);
+  max-width: 460px;
+  min-height: 720px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out, background 0.3s ease-in-out;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cross {
+  margin-bottom: 46px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.cross svg path {
+  fill: var(--text-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+
+.modalActive {
+  transform: translateX(0);
+}
+
+@media(max-width: 1439px) {
+  .modalContainer {
+    padding: 59px 27px;
+  } 
+}

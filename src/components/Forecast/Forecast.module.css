@@ -1,0 +1,17 @@
+.forecast {
+  margin: 0 auto;
+  padding: 42px;
+}
+
+
+@media(max-width: 1439px) {
+  .forecast {
+    padding: 62px 27px;
+  }
+}
+
+@media(max-width: 833px) {
+  .forecast {
+      margin: initial;
+    }
+}

@@ -1,0 +1,94 @@
+.sectionTitle {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.today {
+  margin-top: 36px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 80px;
+}
+
+.infoCard {
+  border-radius: 10px;
+  padding: 20px 25px;
+  background-color: var(--card-background);
+  text-align: center;
+  box-shadow: 0px 8px 15px 0px var(--black-800-t100);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.cardValue {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.cardDefinition {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.cardPressure {
+  font-size: 18px;
+}
+
+.cardSpeed {
+  margin-left: 11px;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 1439px) {
+  .info {
+    grid-template-columns: initial;
+    gap: 27px;
+  }
+  
+  .infoCard {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 833px) {
+  .today {
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .infoCard {
+    max-width: initial;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .info {
+    width: 100%;
+  }
+}

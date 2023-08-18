@@ -1,0 +1,39 @@
+.input {
+  padding: 15px 27px 15px 38px;
+  background-color: transparent;
+  border: 2px solid var(--gray-800);
+  border-radius: 10px;
+  background: url(/src/assets/img/search.png) no-repeat 10px / contain;
+  background-size: 17px 17px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.wrapper {
+  display: flex;
+  gap: 22px;
+}
+
+.button {
+  padding: 15px 27px;
+  background-color: transparent;
+  border: 2px solid var(--gray-800);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+@media(max-width: 1439px) {
+  .wrapper {
+      flex-direction: column;
+    }
+}

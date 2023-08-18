@@ -1,0 +1,58 @@
+.card {
+  background-color: var(--card-background);
+  padding: 17px 14px;
+  border-radius: 8px;
+  width: 100px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 7px 12px 0px #0000000d;
+}
+
+.card:nth-child(n + 7) {
+  display: none;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.js-hidden {
+  display: none;
+}
+
+.day {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.night {
+  color: var(--text-color-second);
+  transition: color 0.3s ease-in-out;
+  margin-left: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 833px) {
+  .card {
+    width: initial;
+  }
+
+  .card:nth-child(n + 7) {
+    display: block;
+  }
+}

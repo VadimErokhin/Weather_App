@@ -1,0 +1,17 @@
+.button {
+  padding: 15px 27px;
+  background-color: transparent;
+  border: 2px solid var(--gray-800);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+@media(max-width: 1439px) {
+  .button {
+    align-self: center;
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 24px;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin: 0;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.tubs {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 16px;
+}
+
+.weekly {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.hourly {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 9px;
+  cursor: pointer;
+  color: var(--gray-800);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.btnActive {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:active::after,
+.btnActive::after {
+  opacity: 1;
+}
+
+@media(max-width: 833px) {
+  .header {
+    grid-auto-flow: initial;
+    gap: 30px;
+    justify-content: initial;
+    padding-left: 0;
+  }
+
+  .title {
+    margin: 0 auto;
+  }
+
+  .tubs {
+    gap: 57px;
+    margin-bottom: 33px;
+    grid-auto-flow: initial;
+    grid-template-columns: 109px 109px;
+    justify-content: center;
+  }
+  
+    
+
+}
