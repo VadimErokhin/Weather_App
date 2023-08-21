@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Weather_App/static/css/main.85fe45d4.css",
+    "main.js": "/Weather_App/static/js/main.1fe70781.js",
+    "static/js/787.d9312eb8.chunk.js": "/Weather_App/static/js/787.d9312eb8.chunk.js",
+    "static/media/Rubik-Bold.ttf": "/Weather_App/static/media/Rubik-Bold.c934eb22c2c69992b34c.ttf",
+    "static/media/Rubik-Medium.ttf": "/Weather_App/static/media/Rubik-Medium.0e121b4fa4d6e9bc5c69.ttf",
+    "static/media/Rubik-Black.ttf": "/Weather_App/static/media/Rubik-Black.a41b3ae4e67200950946.ttf",
+    "static/media/Rubik-Regular.ttf": "/Weather_App/static/media/Rubik-Regular.55fa11cdc8b9a3ee842f.ttf",
+    "static/media/Rubik-Light.ttf": "/Weather_App/static/media/Rubik-Light.9d2ccd264dc61b954019.ttf",
+    "static/media/snow_flake.svg": "/Weather_App/static/media/snow_flake.931288cec81bf90c904683840eb6b61f.svg",
+    "static/media/location_point.svg": "/Weather_App/static/media/location_point.808c3d3888df1e87b07b7e169dc58c85.svg",
+    "index.html": "/Weather_App/index.html",
+    "static/media/switcher.svg": "/Weather_App/static/media/switcher.5c5c3996dd0d8a2cf86165b44438a59d.svg",
+    "static/media/indicator.svg": "/Weather_App/static/media/indicator.a559d1572809349e31feb5bb8e6bb977.svg",
+    "static/media/cross.svg": "/Weather_App/static/media/cross.780a193e275b2e7cf05e9de279532971.svg",
+    "main.85fe45d4.css.map": "/Weather_App/static/css/main.85fe45d4.css.map",
+    "main.1fe70781.js.map": "/Weather_App/static/js/main.1fe70781.js.map",
+    "787.d9312eb8.chunk.js.map": "/Weather_App/static/js/787.d9312eb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85fe45d4.css",
+    "static/js/main.1fe70781.js"
+  ]
+}
