@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import "./App.css";
 import Forecast from "./components/Forecast/Forecast";
 import Sidebar from "./components/Sidebar/Sidebar";
-import "swiper/css";
 
 function App() {
   const [theme, setTheme] = useState("light");

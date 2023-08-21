@@ -12,9 +12,7 @@ function Sidebar(props) {
   const [isActive, setIsActive] = useState(false);
 
   function btnHandler() {
-    console.log("btn handler", isActive);
     setIsActive(true);
-    console.log("btn handler 2", isActive);
   }
 
   function closeModal() {

@@ -5,7 +5,6 @@ import Tabs from "../Tabs/Tabs";
 import Today from "../Today/Today";
 import style from "./Forecast.module.css";
 import { weeklySlider, hourlySlider } from "./data.js";
-import { SwiperSlide } from "swiper/react";
 
 function Forecast() {
   const [currentTab, setCurrentTab] = useState("weekly");
@@ -14,14 +13,13 @@ function Forecast() {
       return (
         <Slider>
           {weeklySlider.map((card, i) => (
-            <SwiperSlide key={`weeekly-${i}`}>
-              <SliderCard
-                date={card.date}
-                type={card.type}
-                day={card.day}
-                night={card.night}
-              />
-            </SwiperSlide>
+            <SliderCard
+              key={`weeekly-${i}`}
+              date={card.date}
+              type={card.type}
+              day={card.day}
+              night={card.night}
+            />
           ))}
         </Slider>
       );
@@ -29,9 +27,12 @@ function Forecast() {
     return (
       <Slider>
         {hourlySlider.map((card, i) => (
-          <SwiperSlide key={`daily-${i}`}>
-            <SliderCard date={card.date} type={card.type} day={card.day} />
-          </SwiperSlide>
+          <SliderCard
+            key={`daily-${i}`}
+            date={card.date}
+            type={card.type}
+            day={card.day}
+          />
         ))}
       </Slider>
     );
